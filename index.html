@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+	<title>Function</title>
+	<style>
+		input, button{padding:10px;}
+	</style>
+</head>
+<body>
+	<div class="function">
+		<div>
+			<input type="number" id="number1" class="number1"><br><br>
+		</div>
+		<div>
+			<input type="number" id="number2" class="number2"><br><br>
+		</div>
+	<button type="button" onclick="add()">Addition</button>
+	<button type="button" onclick="sub()">Subtration</button>
+	<button type="button" onclick="multi()">Multiplication</button>
+	<button type="button" onclick="divi()">Division</button>
+	</div>
+	<script>
+		function add(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a+b;
+			console.log(a+"+"+b+"="+c);
+		}
+		function sub(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a-b;
+			console.log(a+"-"+b+"="+c);
+		}
+		function multi(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a*b;
+			console.log(a+"*"+b+"="+c);
+		}
+		function divi(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a/b;
+			console.log(a+"/"+b+"="+c);
+		}
+	</script>
+</body>
+	
+</html>
